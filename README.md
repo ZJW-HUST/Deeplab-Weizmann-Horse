@@ -5,3 +5,8 @@
   <img src=".\result\m282.png" width="250" title="gt"/>
   <img src=".\result\282.png" width="250" title="Prediction"/>
 </p>
+<p align="center">
+  <img src=".\weizmann_horse_db\horse_test\horse285.png" width="260" title="Original Image"/>
+  <img src=".\result\m285.png" width="260" title="gt"/>
+  <img src=".\result\285.png" width="260" title="Prediction"/>
+</p>
