@@ -1,4 +1,4 @@
-# DeeplabV3+Cancel changes
+# DeeplabV3+
 使用DeeplabV3+在Weizmann Horse数据集上训练对马的二分类语义分割网络
 <p align="center">
   <img src=".\weizmann_horse_db\horse_test\horse282.png" width="250" title="Original Image"/>
@@ -20,3 +20,5 @@ utils包含了测试指标的计算、lr_scheduler、loss函数的定义、各�
 weizmann_horse_db包含了训练集和验证集
 
 若运行train.py文件对模型进行训练，会先下载预训练的backbone，最后创建一个run文件夹，将模型最优参数、训练过程中相关信息(events.out.tfevents文件)保存
+ # 环境依赖
+ 需要 python3.7 pytorch1.1.0 pillow cv2 
