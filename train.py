@@ -261,7 +261,7 @@ def main():
 
     args.test_batch_size = args.batch_size
 
-    lrs = 0.04 #   0.07  #0.08 #初始学习率
+    lrs = 0.05 #   0.07  #0.08 #初始学习率
     args.lr = lrs / (4 * len(args.gpu_ids)) * args.batch_size
 
     if args.checkname is None:
@@ -272,13 +272,15 @@ def main():
     print('Starting Epoch:', trainer.args.start_epoch)
     print('Total Epoches:', trainer.args.epochs)
 
-    trainer.loadmodel()
-    trainer.validation(0)
+    # 在验证集上测试指标
+    # trainer.loadmodel()
+    # trainer.validation(0)
 
-    # for epoch in range(trainer.args.start_epoch, trainer.args.epochs):
-    #     trainer.training(epoch)
-    #     if not trainer.args.no_val and epoch % args.eval_interval == (args.eval_interval - 1):
-    #         trainer.validation(epoch)
+    # 训练模型
+    for epoch in range(trainer.args.start_epoch, trainer.args.epochs):
+        trainer.training(epoch)
+        if not trainer.args.no_val and epoch % args.eval_interval == (args.eval_interval - 1):
+            trainer.validation(epoch)
 
     trainer.writer.close()
 
