@@ -13,11 +13,11 @@
 
 # 模型各文件说明
 运行可视化.ipynb文件即可查看模型输出可视化结果  
-train.py为主文件，包含了Trainer类，里面实例化了DeepLab对象，调用trainer.training(epoch)即可完成一次epoch的训练，调用trainer.validation(epoch)可完成对训练集的测试，并得到各类指标。 
-modeling包含了DeepLab类以及其使用的各种模型 
-mydataloaders用于加载和生成数据集 
-utils包含了测试指标的计算、lr_scheduler、loss函数的定义、各类训练权重的计算、模型的保存、损失的可视化等内容 
-weizmann_horse_db包含了训练集和验证集 
+train.py为主文件，包含了Trainer类，里面实例化了DeepLab对象，调用trainer.training(epoch)即可完成一次epoch的训练，调用trainer.validation(epoch)可完成对训练集的测试，并得到各类指标。  
+modeling包含了DeepLab类以及其使用的各种模型  
+mydataloaders用于加载和生成数据集  
+utils包含了测试指标的计算、lr_scheduler、loss函数的定义、各类训练权重的计算、模型的保存、损失的可视化等内容   
+weizmann_horse_db包含了训练集和验证集   
 若运行train.py文件对模型进行训练，会先下载预训练的backbone，最后创建一个run文件夹，将模型最优参数、训练过程中相关信息(events.out.tfevents文件)保存
  # 环境依赖
  需要 python3.7 pytorch1.1.0 pillow cv2 
