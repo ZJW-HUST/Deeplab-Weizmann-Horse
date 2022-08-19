@@ -26,5 +26,5 @@ weizmann_horse_db包含了训练集和验证集
  百度网盘地址：
  链接：https://pan.baidu.com/s/1mkuX0c3YaIuAFb2Bohcndg?pwd=84ov 
  提取码：84ov
-#训练过程截图
+# 训练过程截图
 <img src=".\result\res.png" title="训练过程截图"/>
