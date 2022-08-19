@@ -18,11 +18,11 @@ def make_data_loader(args):
         testpth1='./weizmann_horse_db/horse_test'
         testpth2='./weizmann_horse_db/mask_test'
         transform_img = transforms.Compose([
-        transforms.Resize((80, 100), interpolation=Image.BILINEAR),
+        transforms.Resize((160, 200), interpolation=Image.BILINEAR),
         transforms.ToTensor(),
     ])
         transform_label= transforms.Compose([
-        transforms.Resize((80, 100), interpolation=Image.NEAREST),
+        transforms.Resize((160, 200), interpolation=Image.NEAREST),
     ])
 
         train_dataset = MyDataset(input_root=pth1,label_root=pth2,transform_img=transform_img,transform_label=transform_label)
