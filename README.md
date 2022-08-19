@@ -22,3 +22,7 @@ weizmann_horse_db包含了训练集和验证集
 若运行train.py文件对模型进行训练，会先下载预训练的backbone，最后创建一个run文件夹，将模型最优参数、训练过程中相关信息(events.out.tfevents文件)保存
  # 环境依赖
  需要 python3.7 pytorch1.1.0 pillow cv2 
+ # 使用训练好的模型测试
+ 百度网盘地址：
+ 链接：https://pan.baidu.com/s/1mkuX0c3YaIuAFb2Bohcndg?pwd=84ov 
+ 提取码：84ov
